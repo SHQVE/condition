@@ -1,0 +1,43 @@
+        body {
+            background: #fef7e8;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #5c3a21 0%, #8b5a2b 100%);
+        }
+
+        .card-hover {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .badge-custom {
+            background: #d4a373;
+            color: #2c1a0e;
+        }
+
+        footer {
+            background: #2c1a0e;
+        }
+
+        .nav-tabs .nav-link {
+            color: #5c3a21;
+            font-weight: 500;
+        }
+
+        .nav-tabs .nav-link.active {
+            background-color: #d4a373;
+            color: white;
+            border-color: #d4a373;
+        }
+
+        .btn-order {
+            background: #8b5a2b;
+            color: white;
+            border-radius: 30px;
+            padding: 8px 20px;
+        }
+
+        .btn-order:hover {
+            background: #8b5a2b;
+            color: white;
+        }
