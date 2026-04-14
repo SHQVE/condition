@@ -1,0 +1,36 @@
+
+        // Передаем название товара в модалку
+        const orderModal = document.getElementById('orderModal');
+        if (orderModal) {
+            orderModal.addEventListener('show.bs.modal', function (event) {
+                const button = event.relatedTarget;
+                const product = button.getAttribute('data-product');
+                document.getElementById('productNameInput').value = product;
+            });
+        }
+
+        // Обработка заказа
+        document.getElementById('submitOrderBtn')?.addEventListener('click', function () {
+            const name = document.getElementById('customerName').value;
+            const phone = document.getElementById('customerPhone').value;
+            const date = document.getElementById('orderDate').value;
+            const product = document.getElementById('productNameInput').value;
+
+            if (name && phone && date) {
+                alert(`Спасибо, ${name}! Ваш заказ на "${product}" принят. Заберите ${date} по адресу: Алые паруса`);
+                bootstrap.Modal.getInstance(orderModal).hide();
+                document.getElementById('orderForm').reset();
+            } else {
+                alert('Пожалуйста, заполните все поля');
+            }
+        });
+
+        // Викторина
+        document.querySelectorAll('.quiz-ans').forEach(btn => {
+            btn.addEventListener('click', function () {
+                const result = this.getAttribute('data-result');
+                const div = document.getElementById('quizResult');
+                div.innerHTML = `Вам подойдёт торт <strong>${result}</strong>! Идеальный выбор для вашего вкуса.`;
+                div.classList.remove('d-none');
+            });
+        });
