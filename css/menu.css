@@ -10,11 +10,6 @@
             transition: transform 0.3s, box-shadow 0.3s;
         }
 
-        .card-hover:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15) !important;
-        }
-
         .badge-custom {
             background: #d4a373;
             color: #2c1a0e;
@@ -43,6 +38,6 @@
         }
 
         .btn-order:hover {
-            background: #5c3a21;
+            background: #8b5a2b;
             color: white;
         }
