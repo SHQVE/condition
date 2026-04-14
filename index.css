@@ -1,0 +1,27 @@
+.cassa {
+    width: 1920px;
+    height: 100vh;
+}
+.myzik {
+    width: 1920px;
+    height: 1080px;
+}
+.vitrina {
+    width: 1920px;
+    height: 1080px;
+}
+.a {
+    margin-bottom: 15px;
+    margin: auto;
+    width: 340px;
+    height: 550px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.a:visited,
+.a:focus,
+.a:hover {
+    color: #fff;
+    text-decoration: none;
+}
