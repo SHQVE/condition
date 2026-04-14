@@ -27,4 +27,12 @@
 }
 .navbarr {
     border-radius: 7%;
+
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+.nbup {
+        z-index: 999;
 }
