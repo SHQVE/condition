@@ -1,53 +1,74 @@
         body {
-            background: url('../img/Background.png')
-        }
-
-        body {
+            background: url('../img/Background.png');
             padding: 0;
             margin: 0;
         }
 
-        * {
+        *{
             box-sizing: border-box;
         }
-
+        
+        /* Шрифты */
         @font-face {
             font-family: 'LeckerliOne-Regular';
             src: url('../font/LeckerliOne-Regular.ttf');
-            font-weight: normal;
-            font-style: normal;
         }
 
         @font-face {
             font-family: 'FiraSans';
             src: url('../font/FiraSans-Medium.ttf');
-            font-weight: normal;
-            font-style: normal;
         }
 
-
-
+        /* Стили для секции с заголовком */
         .hero-section {
             background: url('../img/hero-cackes.png');
             background-size: cover;
             height: 80vh;
             position: relative;
-            z-index: 1;
         }
 
         .hero-content {
             text-align: center;
             color: #FEECE8;
-            z-index: 10
         }
 
         .hero-title {
             font-family: 'LeckerliOne-Regular';
             font-size: 25px;
-            text-shadow: 0 0 5px #453003, 0 0 10px #453003;
         }
 
-        h2 {
+        /* Стили для карточек продуктов */
+        .card-hover {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card-img-top {
+            max-width: 100%;
+            height: auto;
+        }
+
+        <<<<<<< HEAD .hero-content {
+            text-align: center;
+            color: #FEECE8;
+            z-index: 10
+        }
+
+        =======
+
+        /* Стили для кнопок */
+        .btn-order {
+            background: #8b5a2b;
+            color: white;
+            border-radius: 30px;
+            padding: 8px 20px;
+        }
+
+        >>>>>>>aace7969de03d673771a4c7fea2d7ed88719cfdb .btn-order:hover {
+            background: #8b5a2b;
+            color: white;
+        }
+
+        <<<<<<< HEAD h2 {
             font-family: 'FiraSans';
         }
 
@@ -67,9 +88,21 @@
             margin-left: 29%;
         }
 
+        =======
+
+        /* Модальные окна */
+        .modal-content.cake-modal {
+            border: none;
+            border-radius: 28px;
+            background: #fffef7;
         }
 
-        h5 {
+        >>>>>>>aace7969de03d673771a4c7fea2d7ed88719cfdb .modal-header.cake-header {
+            background: #2e241f;
+            color: #f9e7cf;
+        }
+
+        <<<<<<< HEAD h5 {
             font-family: 'FiraSans';
         }
 
@@ -356,3 +389,21 @@
                 margin-left: auto;
             }
         }
+
+        =======
+
+        /* Стили для оформления заказа */
+        .cake-modal .form-label {
+            font-weight: 600;
+            color: #3e2a24;
+            font-size: 0.9rem;
+        }
+
+        .cake-modal .form-control {
+            background-color: #fffaf3;
+            border-radius: 18px;
+            padding: 0.7rem 1rem;
+            font-size: 0.95rem;
+        }
+
+        >>>>>>>aace7969de03d673771a4c7fea2d7ed88719cfdb
