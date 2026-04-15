@@ -1,5 +1,5 @@
         body {
-            background: url('../img/back1.png')
+            background: url('../img/Background.png')
 
         }
 
@@ -15,6 +15,13 @@
         @font-face {
             font-family: 'LeckerliOne-Regular';
             src: url('../font/LeckerliOne-Regular.ttf');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'FiraSans';
+            src: url('../font/FiraSans-Medium.ttf');
             font-weight: normal;
             font-style: normal;
         }
@@ -41,7 +48,28 @@
             text-shadow: 0 0 5px #453003, 0 0 10px #453003;
         }
 
+        h2{
+            font-family: 'FiraSans';
 
+        }
+
+        h5{
+            font-family: 'FiraSans';
+        }
+
+        .row{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar{
+            background-color: #523108;
+        }
+
+        .fas{
+            color: #523108;
+        }
 
         .special-section {
             background: #fdfaf5;
@@ -65,6 +93,39 @@
         .badge-custom {
             background: #d4a373;
             color: #2c1a0e;
+        }
+
+        .btn-outline-secondary{
+            color: #5c3a21;
+            border-color: #5c3a21;
+        }
+
+        .btn-outline-secondary:hover{
+            background-color: #FCE7BA !important;
+            color: #5c3a21;
+            border-color: #FCE7BA;
+        }
+
+        #productTab{
+            background-color: #FCE7BA;
+            border-radius: 10px ;
+        }
+
+        .nav-link{
+            color: #FEECE8;
+            font-family: 'FiraSans';
+        }
+
+        .nav-link:hover{
+            color: #FCE7BA
+        }
+
+        .navbar-brand{
+            color: #FCE7BA;
+        }
+
+        .navbar-brand:hover{
+            color: #FCE7BA;
         }
 
         footer {
