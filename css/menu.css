@@ -29,7 +29,7 @@
             font-family: 'LeckerliOne-Regular';
             font-size: 80px;
             line-height: 1.1;
-            text-shadow: 0 0 5px #453003, 0 0 10px #453003  ;
+            text-shadow: 0 0 5px #453003, 0 0 10px #453003;
         }
 
 
@@ -92,4 +92,90 @@
         .btn-order:hover {
             background: #8b5a2b;
             color: white;
+        }
+
+        .modal-content.cake-modal {
+            border: none;
+            border-radius: 28px;
+            background: #fffef7;
+            overflow: hidden;
+        }
+
+        .modal-header.cake-header {
+            background: #2e241f;
+            color: #f9e7cf;
+            padding: 1.2rem 1.5rem;
+        }
+
+        .modal-header.cake-header h5 {
+            font-weight: 600;
+            font-size: 1.4rem;
+        }
+
+        .btn-close-custom {
+            background: transparent;
+            border: none;
+            font-size: 1.8rem;
+            color: #f9e7cf;
+
+            line-height: 1;
+        }
+
+        .cake-modal .form-label {
+            font-weight: 600;
+            color: #3e2a24;
+
+            font-size: 0.9rem;
+        }
+
+        .cake-modal .form-control {
+            background-color: #fffaf3;
+            border-radius: 18px;
+            padding: 0.7rem 1rem;
+            font-size: 0.95rem;
+            transition: 0.2s;
+        }
+
+        .cake-modal .form-control:focus {
+            border-color: #c49a6c;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(196, 154, 108, 0.2);
+            background-color: #ffffff;
+        }
+
+        .cake-modal .text-muted {
+            font-size: 0.75rem;
+            color: #b48b65 !important;
+            margin-top: 0.4rem;
+            display: block;
+        }
+
+        .btn-cake-order {
+            background: #2e241f;
+            border: none;
+            padding: 0.6rem 1.6rem;
+            border-radius: 40px;
+            font-weight: 600;
+            color: #FEECE8;
+            transition: 0.2s;
+            font-size: 0.95rem;
+        }
+
+        .btn-cake-order:hover {
+            background: #4f382e;
+            color: #FEECE8;
+        }
+
+        .btn-secondary-cake {
+            background: #ede3d6;
+            border: none;
+            padding: 0.6rem 1.4rem;
+            border-radius: 40px;
+            font-weight: 500;
+            color: #4a342b;
+            transition: 0.2s;
+        }
+
+        .btn-secondary-cake:hover {
+            background: #FEECE8;
         }
