@@ -1,6 +1,5 @@
         body {
             background: url('../img/Background.png')
-
         }
 
         body {
@@ -40,7 +39,6 @@
             text-align: center;
             color: #FEECE8;
             z-index: 10
-            
         }
 
         .hero-title {
@@ -49,8 +47,10 @@
             text-shadow: 0 0 5px #453003, 0 0 10px #453003;
         }
 
-        h2{
+        h2 {
             font-family: 'FiraSans';
+        }
+
         .delice-logo {
             font-size: 120pt;
             position: absolute;
@@ -58,6 +58,7 @@
             margin-top: 170px;
             margin-left: 35%;
         }
+
         .Delice-facts {
             font-size: 40pt;
             position: absolute;
@@ -68,21 +69,25 @@
 
         }
 
-        h5{
+        h5 {
             font-family: 'FiraSans';
         }
 
-        .row{
+        .hero-title {
+            font-family: 'FiraSans';
+        }
+
+        .row {
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
-        .navbar{
+        .navbar {
             background-color: #523108;
         }
 
-        .fas{
+        .fas {
             color: #523108;
         }
 
@@ -99,6 +104,14 @@
 
         .bgsecolor {
             background: #FCE7BA;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1),
+                0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar .container-fluid {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         .card-hover {
@@ -110,36 +123,40 @@
             color: #2c1a0e;
         }
 
-        .btn-outline-secondary{
+        .btn-outline-secondary {
             color: #5c3a21;
             border-color: #5c3a21;
         }
 
-        .btn-outline-secondary:hover{
+        .btn-outline-secondary:hover {
             background-color: #FCE7BA !important;
             color: #5c3a21;
             border-color: #FCE7BA;
         }
 
-        #productTab{
-            background-color: #FCE7BA;
-            border-radius: 10px ;
+        #productTab {
+            background-color: #FEF7E8;
+            border-radius: 10px;
+            border-color: #f5e6d7;
         }
 
-        .nav-link{
+        .nav-link {
             color: #FEECE8;
             font-family: 'FiraSans';
+            border-color: #f5e6d7;
         }
 
-        .nav-link:hover{
+        .nav-link:hover {
             color: #FCE7BA
         }
 
-        .navbar-brand{
+        .navbar-brand {
             color: #FCE7BA;
+            font-family: 'LeckerliOne-Regular';
+            font-size: 30px;
         }
 
-        .navbar-brand:hover{
+        .navbar-brand:hover {
             color: #FCE7BA;
         }
 
@@ -255,11 +272,87 @@
         .btn-secondary-cake:hover {
             background: #FEECE8;
         }
-        
+
         .btn-5:hover {
             border: 1px solid;
             box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
             outline-color: rgba(255, 255, 255, 0);
             outline-offset: 15px;
             text-shadow: 1px 1px 2px #427388;
+        }
+
+        .footer {
+            background: #2c1a0e;
+            color: #FEECE8;
+            padding-top: 3rem;
+            padding-bottom: 1rem;
+        }
+
+        .footer-title {
+            font-family: 'LeckerliOne-Regular';
+            font-size: 200px;
+            color: #FCE7BA;
+            margin-bottom: 1rem;
+            transform: rotate(-30deg);
+            display: inline-block;
+            text-align: left;
+        }
+
+        .footer-txt {
+            font-family: 'FiraSans';
+            font-size: 34px;
+            color: #FCE7BA;
+            margin-bottom: 1rem;
+        }
+
+        .footer-text {
+            font-size: 14px;
+            opacity: 0.8;
+            line-height: 1.6;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        .footer-links i {
+            color: #FCE7BA;
+            width: 20px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            margin-top: 1rem;
+            border-top: 1px solid rgba(252, 231, 186, 0.2);
+            font-size: 12px;
+            opacity: 0.7;
+        }
+
+        @media (max-width: 768px) {
+            .footer {
+                text-align: center;
+            }
+
+            .footer-links li {
+                text-align: center;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .navbar-collapse {
+                flex-grow: 0;
+            }
+
+            .navbar-nav {
+                margin-left: auto;
+            }
         }
