@@ -26,15 +26,11 @@
           <a class="nav-link active" aria-current="page" href="#menu">Меню</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Рекомендуемые</a>
+          <a class="nav-link" href="#rec">Рекомендуемые</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Цена</a>
+          <a class="nav-link" href="#mast">Мастерская</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Отключенная</a>
-        </li>
-      </ul>
     </div>
   </div>
 </nav>
@@ -207,7 +203,7 @@
                             <img src="img/menu1/Шоколадный фондан.bmp"
                                 class="card-img-top rounded-top-4" alt="Фондан">
                             <div class="card-body">
-                                <h5 class="card-title fw-bold">Шоколадный фондан</h5>
+                                <h5 class="card-title fw-bold" id="rec">Шоколадный фондан</h5>
                                 <p class="card-text text-muted">Десерт с жидкой сердцевиной из бельгийского шоколада.
                                 </p>
                                 <span class="h6 text-black">450 ₽</span>
@@ -271,7 +267,7 @@
         <div class="row align-items-center">
             <div class="col-lg-6">
                 <img src="img/Master.jpg"
-                    class="img-fluid rounded-4 shadow" alt="Мастерская">
+                    class="img-fluid rounded-4 shadow" id="mast" alt="Мастерская">
             </div>
             <div class="col-lg-6">
                 <h2 class="fw-bold mb-4">Уютное пространство, где возрождаются традиции</h2>
@@ -282,7 +278,7 @@
                 <p>Меню включает как легендарные местные конфеты, так и авторские десерты на их основе. Здесь можно не
                     только попробовать, но и создать свою сладость, погрузившись в историю места, где кондитерское
                     искусство стало частью культурного кода.</p>
-                <button class="btn btn-cake btn-lg mt-3" data-bs-toggle="modal" data-bs-target="#quizModal">Пройти
+                <button class="btn btn-cake btn-lg mt-3 btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#quizModal">Пройти
                     викторину о сладостях</button>
             </div>
         </div>
@@ -342,10 +338,10 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">Помощник выбора десерта</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    <button type="button" class="btn-close btn btn-5" data-bs-dismiss="modal"></button>
                 </div>
 
-                
+
                 <div class="modal-body">
                     <p><strong>Какой вкус вы предпочитаете?</strong></p>
                     <div class="d-flex flex-column gap-2">
