@@ -47,18 +47,7 @@
             position: fixed;
             z-index: 777;
         }
-
-
-        .feauters-section {
-            background: url('../img/ggg.jpg');
-            background-size: 100% auto;
-            margin-top: -50px;
-            position: relative;
-            z-index: 2;
-            padding-top: 570px;
-            background-repeat: no-repeat;
-        }
-
+        
         .special-section {
             background: #fdfaf5;
             margin-top: -50px;
