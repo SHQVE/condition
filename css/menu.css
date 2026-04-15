@@ -41,10 +41,7 @@
             text-shadow: 0 0 5px #453003, 0 0 10px #453003;
         }
 
-        .nav-title {
-            position: fixed;
-            z-index: 777;
-        }
+
 
         .special-section {
             background: #fdfaf5;
