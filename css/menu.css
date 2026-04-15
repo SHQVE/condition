@@ -1,156 +1,495 @@
-/* Общие стили для всей страницы */
-body {
-    background: url('../img/Background.png');
-    padding: 0;
-    margin: 0;
-}
+        body {
+            background: url('../img/Background.png');
+            padding: 0;
+            margin: 0;
+        }
 
-* {
-    box-sizing: border-box;
-}
+        * {
+            box-sizing: border-box;
+        }
 
-/* Шрифты */
-@font-face {
-    font-family: 'LeckerliOne-Regular';
-    src: url('../font/LeckerliOne-Regular.ttf');
-}
+        /* Шрифты */
+        @font-face {
+            font-family: 'LeckerliOne-Regular';
+            src: url('../font/LeckerliOne-Regular.ttf');
+        }
 
-@font-face {
-    font-family: 'FiraSans';
-    src: url('../font/FiraSans-Medium.ttf');
-}
+        @font-face {
+            font-family: 'FiraSans';
+            src: url('../font/FiraSans-Medium.ttf');
+        }
 
-/* Стили для секции с заголовком */
-.hero-section {
-    background: url('../img/hero-cackes.png');
-    background-size: cover;
-    height: 80vh;
-    position: relative;
-}
+        /* Стили для секции с заголовком */
+        .hero-section {
+            background: url('../img/hero-cackes.png');
+            background-size: cover;
+            height: 80vh;
+            position: relative;
+        }
 
-.hero-content {
-    text-align: center;
-    color: #FEECE8;
-}
+        .hero-content {
+            text-align: center;
+            color: #FEECE8;
+        }
 
-.hero-title {
-    font-family: 'LeckerliOne-Regular';
-    font-size: 25px;
-}
+        .hero-title {
+            font-family: 'LeckerliOne-Regular';
+            font-size: 25px;
+        }
 
-/* Стили для карточек */
-.card-hover {
-    transition: transform 0.3s, box-shadow 0.3s;
-}
+        /* Стили для карточек продуктов */
+        .card-hover {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
 
-.card-img-top {
-    max-width: 100%;
-    height: auto;
-}
+        /* Стили для карточек */
+        .card-hover {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
 
-/* Стили для кнопок */
-.btn-order {
-    background: #8b5a2b;
-    color: white;
-    border-radius: 30px;
-    padding: 8px 20px;
-}
+        .card-img-top {
+            max-width: 100%;
+            height: auto;
+        }
 
-.btn-order:hover {
-    background: #8b5a2b;
-    color: white;
-}
-
-/* Модальные окна */
-.modal-content.cake-modal {
-    border: none;
-    border-radius: 28px;
-    background: #fffef7;
-}
-
-.modal-header.cake-header {
-    background: #2e241f;
-    color: #f9e7cf;
-}
-
-/* Стили для заказа */
-.cake-modal .form-label {
-    font-weight: 600;
-    color: #3e2a24;
-    font-size: 0.9rem;
-}
-
-.cake-modal .form-control {
-    background-color: #fffaf3;
-    border-radius: 18px;
-    padding: 0.7rem 1rem;
-    font-size: 0.95rem;
-}
-/* Большое лого */
-.delice-logo {
-  
-    font-size: 120pt;
-    position: absolute;
-    justify-content: center;
-    margin-top: 170px;
-
-    margin-left: 35%;
-}
-
-/* Средняя подпись */
-.Delice-facts {
-
-    font-size: 40pt;
-    position: absolute;
-    justify-content: center;
-    margin-top: 330px;
-    margin-left: 34%;
-}
-
-/* Стили для мобильных телефонов */
-@media (max-width: 767px) {
-
-    /* Уменьшаем размер логотипа в навбаре */
-    .navbar-brand {
-        font-size: 20px;
-    }
-
-    /* Размер заголовка зависит от ширины экрана */
-    .hero-title {
-        font-size: 10vw;
-
-    }
-    
-    /* Подпись меньше для телефонов */
-    .Delice-facts {
-        font-size: 35pt;
-        margin-left: 12%;
-        
-    }
-    .delice-logo {
-        font-size: 45pt;
-        margin-left: 31%;
-        margin-top: 250px;
-    }
-    /* Все карточки в колонку */
-    .row {
-        flex-direction: column;
-    }
-
-    /* Оптимизация кнопки под телефон */
-    .btn-order {
-        padding: 10px 15px;
-        font-size: 14px;
-    }
+        HEAD .hero-content {
+            text-align: center;
+            color: #FEECE8;
+            z-index: 10
+        }
 
 
-    .card-img-top {
-        max-width: 100%;
-        height: auto;
-    }
-}
+        /* Стили для кнопок */
+        .btn-order {
+            background: #8b5a2b;
+            color: white;
+            border-radius: 30px;
+            padding: 8px 20px;
+        }
 
-h2 {
-    font-family: 'FiraSans';
-}
+        .btn-order:hover {
+            background: #8b5a2b;
+            color: white;
+        }
 
+        HEAD h2 {
+            font-family: 'FiraSans';
+        }
+
+        /* Стили для заказа */
+        .cake-modal .form-label {
+            font-weight: 600;
+            color: #3e2a24;
+            font-size: 0.9rem;
+        }
+
+        .cake-modal .form-control {
+            background-color: #fffaf3;
+            border-radius: 18px;
+            padding: 0.7rem 1rem;
+            font-size: 0.95rem;
+        }
+
+        /* Большое лого */
+        .delice-logo {
+
+            font-size: 120pt;
+            position: absolute;
+            justify-content: center;
+            margin-top: 170px;
+
+            margin-left: 35%;
+        }
+
+        /* Средняя подпись */
+        .Delice-facts {
+
+            font-size: 40pt;
+            position: absolute;
+            justify-content: center;
+            margin-top: 330px;
+            margin-left: 34%;
+        }
+
+        /* Стили для мобильных телефонов */
+        @media (max-width: 767px) {
+
+            /* Уменьшаем размер логотипа в навбаре */
+            .navbar-brand {
+                font-size: 20px;
+            }
+
+            /* Размер заголовка зависит от ширины экрана */
+            .hero-title {
+                font-size: 10vw;
+
+            }
+
+            /* Подпись меньше для телефонов */
+            .Delice-facts {
+                font-size: 35pt;
+                margin-left: 12%;
+
+            }
+
+            .delice-logo {
+                font-size: 45pt;
+                margin-left: 31%;
+                margin-top: 250px;
+            }
+
+            /* Все карточки в колонку */
+            .row {
+                flex-direction: column;
+            }
+
+            /* Оптимизация кнопки под телефон */
+            .btn-order {
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+
+
+            .card-img-top {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        h2 {
+            font-family: 'FiraSans';
+        }
+
+        .delice-logo {
+            font-size: 120pt;
+            position: absolute;
+            justify-content: center;
+            margin-top: 170px;
+            margin-left: 35%;
+        }
+
+        .Delice-facts {
+            font-size: 40pt;
+            position: absolute;
+            justify-content: center;
+            margin-top: 330px;
+            margin-left: 29%;
+        }
+
+
+
+        /* Модальные окна */
+        .modal-content.cake-modal {
+            border: none;
+            border-radius: 28px;
+            background: #fffef7;
+        }
+
+        .modal-header.cake-header {
+            background: #2e241f;
+            color: #f9e7cf;
+        }
+
+        HEAD h5 {
+            font-family: 'FiraSans';
+        }
+
+        .hero-title {
+            font-family: 'FiraSans';
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar {
+            background-color: #523108;
+        }
+
+        .fas {
+            color: #523108;
+        }
+
+        .special-section {
+            background: #fdfaf5;
+            margin-top: -50px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #5c3a21 0%, #8b5a2b 100%);
+        }
+
+        .bgsecolor {
+            background: #FCE7BA;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1),
+                0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar .container-fluid {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .card-hover {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .badge-custom {
+            background: #d4a373;
+            color: #2c1a0e;
+        }
+
+        .btn-outline-secondary {
+            color: #5c3a21;
+            border-color: #5c3a21;
+        }
+
+        .btn-outline-secondary:hover {
+            background-color: #FCE7BA !important;
+            color: #5c3a21;
+            border-color: #FCE7BA;
+        }
+
+        #productTab {
+            background-color: #FEF7E8;
+            border-radius: 10px;
+            border-color: #f5e6d7;
+        }
+
+        .nav-link {
+            color: #FEECE8;
+            font-family: 'FiraSans';
+            border-color: #f5e6d7;
+        }
+
+        .nav-link:hover {
+            color: #FCE7BA
+        }
+
+        .navbar-brand {
+            color: #FCE7BA;
+            font-family: 'LeckerliOne-Regular';
+            font-size: 30px;
+        }
+
+        .navbar-brand:hover {
+            color: #FCE7BA;
+        }
+
+        footer {
+            background: #2c1a0e;
+        }
+
+        .nav-tabs .nav-link {
+            color: #5c3a21;
+            font-weight: 500;
+        }
+
+        .nav-tabs .nav-link.active {
+            background-color: #d4a373;
+            color: white;
+            border-color: #d4a373;
+        }
+
+        .btn-order {
+            background: #8b5a2b;
+            color: white;
+            border-radius: 30px;
+            padding: 8px 20px;
+        }
+
+        .btn-order:hover {
+            background: #8b5a2b;
+            color: white;
+        }
+
+        .modal-content.cake-modal {
+            border: none;
+            border-radius: 28px;
+            background: #fffef7;
+            overflow: hidden;
+        }
+
+        .modal-header.cake-header {
+            background: #2e241f;
+            color: #f9e7cf;
+            padding: 1.2rem 1.5rem;
+        }
+
+        .modal-header.cake-header h5 {
+            font-weight: 600;
+            font-size: 1.4rem;
+        }
+
+        .btn-close-custom {
+            background: transparent;
+            border: none;
+            font-size: 1.8rem;
+            color: #f9e7cf;
+
+            line-height: 1;
+        }
+
+        .cake-modal .form-label {
+            font-weight: 600;
+            color: #3e2a24;
+
+            font-size: 0.9rem;
+        }
+
+        .cake-modal .form-control {
+            background-color: #fffaf3;
+            border-radius: 18px;
+            padding: 0.7rem 1rem;
+            font-size: 0.95rem;
+            transition: 0.2s;
+        }
+
+        .cake-modal .form-control:focus {
+            border-color: #c49a6c;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(196, 154, 108, 0.2);
+            background-color: #ffffff;
+        }
+
+        .cake-modal .text-muted {
+            font-size: 0.75rem;
+            color: #b48b65 !important;
+            margin-top: 0.4rem;
+            display: block;
+        }
+
+        .btn-cake-order {
+            background: #2e241f;
+            border: none;
+            padding: 0.6rem 1.6rem;
+            border-radius: 40px;
+            font-weight: 600;
+            color: #FEECE8;
+            transition: 0.2s;
+            font-size: 0.95rem;
+        }
+
+        .btn-cake-order:hover {
+            background: #4f382e;
+            color: #FEECE8;
+        }
+
+        .btn-secondary-cake {
+            background: #ede3d6;
+            border: none;
+            padding: 0.6rem 1.4rem;
+            border-radius: 40px;
+            font-weight: 500;
+            color: #4a342b;
+            transition: 0.2s;
+        }
+
+        .btn-secondary-cake:hover {
+            background: #FEECE8;
+        }
+
+        .btn-5:hover {
+            border: 1px solid;
+            box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+            outline-color: rgba(255, 255, 255, 0);
+            outline-offset: 15px;
+            text-shadow: 1px 1px 2px #427388;
+        }
+
+        .footer {
+            background: #2c1a0e;
+            color: #FEECE8;
+            padding-top: 3rem;
+            padding-bottom: 1rem;
+        }
+
+        .footer-title {
+            font-family: 'LeckerliOne-Regular';
+            font-size: 200px;
+            color: #FCE7BA;
+            margin-bottom: 1rem;
+            transform: rotate(-30deg);
+            display: inline-block;
+            text-align: left;
+        }
+
+        .footer-txt {
+            font-family: 'FiraSans';
+            font-size: 34px;
+            color: #FCE7BA;
+            margin-bottom: 1rem;
+        }
+
+        .footer-text {
+            font-size: 14px;
+            opacity: 0.8;
+            line-height: 1.6;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        .footer-links i {
+            color: #FCE7BA;
+            width: 20px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            margin-top: 1rem;
+            border-top: 1px solid rgba(252, 231, 186, 0.2);
+            font-size: 12px;
+            opacity: 0.7;
+        }
+
+        @media (max-width: 768px) {
+            .footer {
+                text-align: center;
+            }
+
+            .footer-links li {
+                text-align: center;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .navbar-collapse {
+                flex-grow: 0;
+            }
+
+            .navbar-nav {
+                margin-left: auto;
+            }
+        }
+
+
+
+        /* Стили для оформления заказа */
+        .cake-modal .form-label {
+            font-weight: 600;
+            color: #3e2a24;
+            font-size: 0.9rem;
+        }
+
+        .cake-modal .form-control {
+            background-color: #fffaf3;
+            border-radius: 18px;
+            padding: 0.7rem 1rem;
+            font-size: 0.95rem;
+        }
