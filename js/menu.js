@@ -9,6 +9,7 @@
             });
         }
 
+
         // Обработка заказа
         document.getElementById('submitOrderBtn')?.addEventListener('click', function () {
             const name = document.getElementById('customerName').value;
@@ -17,7 +18,7 @@
             const date = document.getElementById('orderDate').value;
             const product = document.getElementById('productNameInput').value;
 
-            if (name && phone && date && email) {
+            if (name && phone && date && email.includes("@")) {
                 alert(`Спасибо, ${name}! Ваш заказ на "${product}" принят. Заберите ${date} по адресу: Алые паруса`);
                 bootstrap.Modal.getInstance(orderModal).hide();
                 document.getElementById('orderForm').reset();
