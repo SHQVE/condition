@@ -33,6 +33,7 @@
             text-align: center;
             color: #FEECE8;
             z-index: 10
+            
         }
 
         .hero-title {
@@ -40,7 +41,20 @@
             font-size: 25px;
             text-shadow: 0 0 5px #453003, 0 0 10px #453003;
         }
-
+        .delice-logo {
+            font-size: 120pt;
+            position: absolute;
+            justify-content: center;
+            margin-top: 170px;
+            margin-left: 35%;
+        }
+        .Delice-facts {
+            font-size: 40pt;
+            position: absolute;
+            justify-content: center;
+            margin-top: 330px;
+            margin-left: 29%;
+        }
 
 
         .special-section {
