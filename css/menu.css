@@ -1,5 +1,5 @@
         body {
-            background: #fef7e8;
+            background: url('../img/back1.png')
 
         }
 
@@ -38,16 +38,14 @@
         .hero-title {
             font-family: 'LeckerliOne-Regular';
             font-size: 25px;
-            line-height: 1.1;
             text-shadow: 0 0 5px #453003, 0 0 10px #453003;
-
         }
 
         .nav-title {
             position: fixed;
             z-index: 777;
         }
-        
+
         .special-section {
             background: #fdfaf5;
             margin-top: -50px;
