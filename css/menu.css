@@ -1,5 +1,15 @@
         body {
             background: #fef7e8;
+
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        * {
+            box-sizing: border-box;
         }
 
         @font-face {
@@ -27,9 +37,14 @@
 
         .hero-title {
             font-family: 'LeckerliOne-Regular';
-            font-size: 80px;
+            font-size: 25px;
             line-height: 1.1;
-            text-shadow: 0 0 5px #453003, 0 0 10px #453003  ;
+            text-shadow: 0 0 5px #453003, 0 0 10px #453003;
+     
+        }
+        .nav-title {
+                   position: fixed;
+                   z-index: 777;
         }
 
 
