@@ -42,18 +42,18 @@
             text-shadow: 0 0 5px #453003, 0 0 10px #453003;
         }
         .delice-logo {
-            font-size: 120pt;
+            font-size: 50vh;
             position: absolute;
             justify-content: center;
             margin-top: 170px;
-            margin-left: 35%;
+            margin-left: 35vh;
         }
         .Delice-facts {
-            font-size: 40pt;
+            font-size: 40vh;
             position: absolute;
             justify-content: center;
             margin-top: 330px;
-            margin-left: 29%;
+            margin-left: 25vh;
         }
 
 
