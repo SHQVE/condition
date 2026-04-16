@@ -59,3 +59,23 @@ document.querySelectorAll('.quiz-ans').forEach(btn => {
         lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
     });
 })();
+
+// рекомендуемые
+document.querySelector('a[href="#rec"]').addEventListener('click', function (e) {
+    e.preventDefault();
+
+    //переключаемся на Авторские десерты
+    const authorTab = document.querySelector('#author-tab');
+    if (authorTab) {
+        const tab = new bootstrap.Tab(authorTab);
+        tab.show();
+    }
+
+    // ждём, потом скролим
+    setTimeout(() => {
+        const recElement = document.querySelector('#rec');
+        if (recElement) {
+            recElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    }, 300);
+});

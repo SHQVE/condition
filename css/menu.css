@@ -4,6 +4,10 @@
             background: url('../img/Background.png');
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         .containers {
             background: url('../img/Background.png');
         }
@@ -454,14 +458,14 @@
 
         .footer-title {
             font-family: 'LeckerliOne-Regular';
-            font-size: 350px;
-            color: #FCE7BA;
+            font-size: 550px;
+            color: #130B06;
             margin-bottom: 1rem;
             transform: rotate(-30deg);
             display: inline-block;
             text-align: left;
             margin-left: -650px;
-            margin-top: -100px;
+            margin-top: -400px;
         }
 
         .footer-txt {
