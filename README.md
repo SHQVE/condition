@@ -88,6 +88,8 @@ index.html
 в любом браузере
 
 ---
+## Сайт доступен по ссылке
+https://condition-pink.vercel.app/
 
 ## Обычный хостинг
 1. Зарегистрируйтесь на vercel.com (через GitHub)
