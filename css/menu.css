@@ -42,12 +42,17 @@
             transition: transform 0.3s, box-shadow 0.3s;
         }
 
+        /* Стили для карточек */
+        .card-hover {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
         .card-img-top {
             max-width: 100%;
             height: auto;
         }
 
-        .hero-content {
+        HEAD .hero-content {
             text-align: center;
             color: #FEECE8;
             z-index: 10
@@ -64,6 +69,90 @@
         .btn-order:hover {
             background: #8b5a2b;
             color: white;
+        }
+
+        HEAD h2 {
+            font-family: 'FiraSans';
+        }
+
+        /* Стили для заказа */
+        .cake-modal .form-label {
+            font-weight: 600;
+            color: #3e2a24;
+            font-size: 0.9rem;
+        }
+
+        .cake-modal .form-control {
+            background-color: #fffaf3;
+            border-radius: 18px;
+            padding: 0.7rem 1rem;
+            font-size: 0.95rem;
+        }
+
+        /* Большое лого */
+        .delice-logo {
+
+            font-size: 120pt;
+            position: absolute;
+            justify-content: center;
+            margin-top: 170px;
+
+            margin-left: 35%;
+        }
+
+        /* Средняя подпись */
+        .Delice-facts {
+
+            font-size: 40pt;
+            position: absolute;
+            justify-content: center;
+            margin-top: 330px;
+            margin-left: 34%;
+        }
+
+        /* Стили для мобильных телефонов */
+        @media (max-width: 767px) {
+
+            /* Уменьшаем размер логотипа в навбаре */
+            .navbar-brand {
+                font-size: 20px;
+            }
+
+            /* Размер заголовка зависит от ширины экрана */
+            .hero-title {
+                font-size: 10vw;
+
+            }
+
+            /* Подпись меньше для телефонов */
+            .Delice-facts {
+                font-size: 35pt;
+                margin-left: 12%;
+
+            }
+
+            .delice-logo {
+                font-size: 45pt;
+                margin-left: 31%;
+                margin-top: 250px;
+            }
+
+            /* Все карточки в колонку */
+            .row {
+                flex-direction: column;
+            }
+
+            /* Оптимизация кнопки под телефон */
+            .btn-order {
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+
+
+            .card-img-top {
+                max-width: 100%;
+                height: auto;
+            }
         }
 
         h2 {
@@ -86,6 +175,8 @@
             margin-left: 29%;
         }
 
+
+
         /* Модальные окна */
         .modal-content.cake-modal {
             border: none;
@@ -98,8 +189,12 @@
             color: #f9e7cf;
         }
 
-        h5 {
-            
+        HEAD h5 {
+            font-family: 'FiraSans';
+        }
+
+        .hero-title {
+            font-family: 'FiraSans';
         }
 
         .row {
@@ -381,6 +476,8 @@
                 margin-left: auto;
             }
         }
+
+
 
         /* Стили для оформления заказа */
         .cake-modal .form-label {
