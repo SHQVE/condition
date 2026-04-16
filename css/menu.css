@@ -1,7 +1,11 @@
         body {
-            background: url('../img/Background.png');
             padding: 0;
             margin: 0;
+            background: url('../img/Background.png');
+        }
+
+        .containers {
+            background: url('../img/Background.png');
         }
 
         * {
@@ -19,37 +23,67 @@
             src: url('../font/FiraSans-Medium.ttf');
         }
 
-        /* Стили для секции с заголовком */
+        /* анимация скрытия навбара */
+        .navbar {
+            transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+            transform: translateY(0);
+        }
+
+        .navbar-hidden {
+            transform: translateY(-100%);
+        }
+
+        .navbar {
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
         .hero-section {
             background: url('../img/hero-cackes.png');
             background-size: cover;
             height: 80vh;
             position: relative;
+            text-align: center;
+            align-items: center;
+        }
+
+        .site-wrapper {
+            text-align: center;
+            align-items: center;
         }
 
         .hero-content {
             text-align: center;
             color: #FEECE8;
+            position: relative;
+            height: 80vh;
+
         }
 
         .hero-title {
             font-family: 'LeckerliOne-Regular';
-            font-size: 25px;
+            font-size: 155px;
+            text-align: center;
+            color: #FEECE8;
+            text-shadow:
+                1px 1px 0 #2c1a0e,
+                1px -1px 0 #2c1a0e,
+                -1px 1px 0 #2c1a0e,
+                -1px -1px 0 #2c1a0e,
+                2px 2px 0 #2c1a0e;
         }
 
-        /* Стили для карточек продуктов */
-        .card-hover {
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        /* Стили для карточек */
-        .card-hover {
-            transition: transform 0.3s, box-shadow 0.3s;
+        .hero-untitle {
+            font-family: 'FiraSans';
+            text-align: center;
+            align-items: center;
+            -webkit-text-stroke: 1px #2c1a0e;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
 
         .card-img-top {
             max-width: 100%;
-            height: auto;
+            height: 200px;
+            object-fit: cover;
         }
 
         HEAD .hero-content {
@@ -58,7 +92,6 @@
             z-index: 10
         }
 
-        /* Стили для кнопок */
         .btn-order {
             background: #8b5a2b;
             color: white;
@@ -75,7 +108,10 @@
             font-family: 'FiraSans';
         }
 
-        /* Стили для заказа */
+        p {
+            font-family: 'FiraSans';
+        }
+
         .cake-modal .form-label {
             font-weight: 600;
             color: #3e2a24;
@@ -89,7 +125,6 @@
             font-size: 0.95rem;
         }
 
-        /* Большое лого */
         .delice-logo {
 
             font-size: 120pt;
@@ -100,31 +135,37 @@
             margin-left: 35%;
         }
 
-        /* Средняя подпись */
         .Delice-facts {
-
             font-size: 40pt;
             position: absolute;
-            justify-content: center;
-            margin-top: 330px;
-            margin-left: 34%;
+            top: 65%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            white-space: nowrap;
         }
 
-        /* Стили для мобильных телефонов */
+        .delice-log {
+            font-size: 120pt;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            white-space: nowrap;
+        }
+
+        /* для телефонов */
         @media (max-width: 767px) {
 
-            /* Уменьшаем размер логотипа в навбаре */
             .navbar-brand {
                 font-size: 20px;
             }
 
-            /* Размер заголовка зависит от ширины экрана */
             .hero-title {
                 font-size: 10vw;
 
             }
 
-            /* Подпись меньше для телефонов */
             .Delice-facts {
                 font-size: 35pt;
                 margin-left: 12%;
@@ -137,12 +178,10 @@
                 margin-top: 250px;
             }
 
-            /* Все карточки в колонку */
             .row {
                 flex-direction: column;
             }
 
-            /* Оптимизация кнопки под телефон */
             .btn-order {
                 padding: 10px 15px;
                 font-size: 14px;
@@ -167,16 +206,6 @@
             margin-left: 35%;
         }
 
-        .Delice-facts {
-            font-size: 40pt;
-            position: absolute;
-            justify-content: center;
-            margin-top: 330px;
-            margin-left: 29%;
-        }
-
-
-
         /* Модальные окна */
         .modal-content.cake-modal {
             border: none;
@@ -190,10 +219,6 @@
         }
 
         HEAD h5 {
-            font-family: 'FiraSans';
-        }
-
-        .hero-title {
             font-family: 'FiraSans';
         }
 
@@ -236,6 +261,11 @@
 
         .card-hover {
             transition: transform 0.3s, box-shadow 0.3s;
+            height: 200px;
+        }
+
+        .card-body {
+            height: 150px;
         }
 
         .badge-custom {
@@ -393,6 +423,19 @@
             background: #FEECE8;
         }
 
+        .cake-modal .form-label {
+            font-weight: 600;
+            color: #3e2a24;
+            font-size: 0.9rem;
+        }
+
+        .cake-modal .form-control {
+            background-color: #fffaf3;
+            border-radius: 18px;
+            padding: 0.7rem 1rem;
+            font-size: 0.95rem;
+        }
+
         .btn-5:hover {
             border: 1px solid;
             box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
@@ -406,21 +449,24 @@
             color: #FEECE8;
             padding-top: 3rem;
             padding-bottom: 1rem;
+            overflow: hidden;
         }
 
         .footer-title {
             font-family: 'LeckerliOne-Regular';
-            font-size: 200px;
+            font-size: 350px;
             color: #FCE7BA;
             margin-bottom: 1rem;
             transform: rotate(-30deg);
             display: inline-block;
             text-align: left;
+            margin-left: -650px;
+            margin-top: -100px;
         }
 
         .footer-txt {
             font-family: 'FiraSans';
-            font-size: 34px;
+            font-size: 54px;
             color: #FCE7BA;
             margin-bottom: 1rem;
         }
@@ -477,18 +523,118 @@
             }
         }
 
+        @media (max-width: 767px) {
+            .footer-title {
+                font-size: 60px !important;
+                margin-left: 0 !important;
+                margin-top: 0 !important;
+                transform: rotate(0deg) !important;
+            }
 
-
-        /* Стили для оформления заказа */
-        .cake-modal .form-label {
-            font-weight: 600;
-            color: #3e2a24;
-            font-size: 0.9rem;
+            .footer-txt {
+                font-size: 24px !important;
+            }
         }
 
-        .cake-modal .form-control {
-            background-color: #fffaf3;
-            border-radius: 18px;
-            padding: 0.7rem 1rem;
-            font-size: 0.95rem;
+        @media (max-width: 767px) {
+            .delice-log {
+                font-size: 45pt !important;
+                top: 45% !important;
+                white-space: normal !important;
+                text-align: center !important;
+                width: 90% !important;
+            }
+
+            .Delice-facts {
+                font-size: 20pt !important;
+                top: 65% !important;
+                white-space: nowrap !important;
+                width: 100% !important;
+            }
+
+            .hero-content {
+                height: 80vh;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .card-img-top {
+                height: 180px !important;
+                object-fit: cover;
+            }
+
+            .card-body {
+                padding: 15px;
+            }
+
+            .card-title {
+                font-size: 18px;
+            }
+
+            .card-text {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-content {
+                position: relative;
+                height: 60vh;
+            }
+
+            .delice-log {
+                font-size: 45pt !important;
+                position: absolute;
+                top: 45%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                white-space: nowrap;
+                margin: 0;
+            }
+
+            .Delice-facts {
+                font-size: 18pt !important;
+                position: absolute;
+                top: 65%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                white-space: nowrap;
+                margin: 0;
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        /* затемнение фона для телефонов */
+        @media (max-width: 768px) {
+            .hero-section::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.6);
+                z-index: 1;
+            }
+
+            .hero-content {
+                position: relative;
+                z-index: 2;
+            }
+
+            .hero-title {
+                text-shadow:
+                    2px 2px 0 #1a0f08,
+                    2px -2px 0 #1a0f08,
+                    -2px 2px 0 #1a0f08,
+                    -2px -2px 0 #1a0f08,
+                    4px 4px 8px black;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .fw-bold {
+                margin-top: 20px;
+            }
         }
